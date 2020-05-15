@@ -1,4 +1,74 @@
-baseURL = "http://example.org/"
+baseURL = "https://amritrathie.now.sh"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Amrit Rathie"
 theme = "hello-friend-ng"
+copyright = "Amrit Rathie"
+paginate = 1
+canonifyURLs = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+enableMissingTranslationPlaceholders = false
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = true
+comments = true
+homeSubtitle = "Software Developer"
+defaultTheme = "dark"
+
+[author]
+name = "Amrit Rathie"
+
+[permalinks]
+posts = "/posts/:year/:month/:day/:title/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+description = "Website and blog of Amrit Rathie"
+keywords = "homepage, blog, science, math, mathematics, software, development, programming, coding, language, PL, rust, haskell"
+comments = true
+gitUrl = "https://github.com/Spaceface16518/website/commit/"
+contentTypeName = "posts"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/Spaceface16518/"
+
+[[params.social]]
+name = "email"
+url = "mailto:amrit.rathie@gmail.com"
+
+[languages]
+
+[languages.en]
+title = "Amrit Rathie"
+subtitle = "Software Developer"
+keywords = ""
+copyright = "Amrit Rathie"
+readOtherPosts = "Read other posts"
+
+# home logo
+[languages.en.params.logo]
+logoText = "cd /home/amrit"
+logoHomeLink = "/"
+
+# menu in header
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts"
+
+[taxonomies]
+tag = "tags"
+category = ""
