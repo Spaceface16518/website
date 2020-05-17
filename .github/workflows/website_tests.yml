@@ -27,3 +27,32 @@ jobs:
     
     - name: Test Accessibility
       run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml
+
+  proofer:
+    name: HTML Proofer
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get Deployment URL
+        id: get_deployment_url
+        uses: dorshinar/get-deployment-url@v1.0.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2.4.11
+        with:
+          extended: true
+      - name: Build site
+        run: hugo --buildDrafts --baseURL=${{ steps.get_deployment_url.outputs.deployment }}
+      
+      - name: Install Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: Install HTML Proofer
+        run: gem install html-proofer
+      - name: Run HTML Proofer
+        # adapted from https://github.com/cibuilds/hugo#using-on-circleci
+        run: html-proofer ./public --allow-hash-href --check-html --empty-alt-ignore --disable-external
