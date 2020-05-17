@@ -19,11 +19,12 @@ jobs:
       run: npm install --global pa11y-ci
     
     - name: Get Deployment URL
+      id: get_deployment_url
       uses: dorshinar/get-deployment-url@v1.0.4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Test Accessibility
-      run: pa11y-ci --sitemap ${{ needs.get_deployment_url.outputs.deployment }}/sitemap.xml
+      run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml
       
 
