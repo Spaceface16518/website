@@ -6,7 +6,7 @@ copyright = "Amrit Rathie"
 paginate = 1
 canonifyURLs = true
 enableRobotsTXT = true
-enableGitInfo = true
+enableGitInfo = false
 enableEmoji = true
 enableMissingTranslationPlaceholders = false
 disableRSS = false
@@ -16,6 +16,10 @@ disableHugoGeneratorInject = true
 comments = true
 homeSubtitle = "Software Developer"
 defaultTheme = "dark"
+
+[module]
+[[module.imports]]
+path = "hello-friend-ng"
 
 [author]
 name = "Amrit Rathie"
