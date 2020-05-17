@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  get_deployment_url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Deployment URL
+        uses: dorshinar/get-deployment-url@v1.0.4
+
+  test:
+    runs-on: ubuntu-latest
+    needs: [get_deployment_url]
+
+    steps:
+    - uses: actions/checkout@v2
+        
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.2
+    
+    - name: Install Pa11y
+      run: npm install --global pa11y-ci
+    
+    - name: Test Accessibility
+      run: pa11y-ci --sitemap ${{ needs.get_deployment_url.outputs.deployment }}/sitemap.xml
+      
+
