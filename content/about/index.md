@@ -17,7 +17,7 @@ I'm also familiar with theoretical computer science, from calculus to **category
 
 ***
 
-This website was building using
+This website was built using
 
 - [Hugo](https://gohugo.io/) for website generation
   - the [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) theme for Hugo
