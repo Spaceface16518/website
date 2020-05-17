@@ -2,24 +2,12 @@
 
 name: Website Tests
 
-on:
-  push:
-    branches: [master, draft]
-  pull_request:
+on: [push, pull_request] # TODO: make this only pushes on master and pull requests
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  get_deployment_url:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get Deployment URL
-        uses: dorshinar/get-deployment-url@v1.0.4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   test:
     runs-on: ubuntu-latest
-    needs: [get_deployment_url]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,6 +17,11 @@ jobs:
     
     - name: Install Pa11y
       run: npm install --global pa11y-ci
+    
+    - name: Get Deployment URL
+      uses: dorshinar/get-deployment-url@v1.0.4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Test Accessibility
       run: pa11y-ci --sitemap ${{ needs.get_deployment_url.outputs.deployment }}/sitemap.xml
