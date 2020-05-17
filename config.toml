@@ -1,4 +1,3 @@
-baseURL = "https://amritrathie.now.sh"
 languageCode = "en-us"
 title = "Amrit Rathie"
 theme = "hello-friend-ng"
@@ -16,10 +15,6 @@ disableHugoGeneratorInject = true
 comments = true
 homeSubtitle = "Software Developer"
 defaultTheme = "dark"
-
-[module]
-[[module.imports]]
-path = "hello-friend-ng"
 
 [author]
 name = "Amrit Rathie"
