@@ -1,12 +1,13 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Website Tests
 
-on: [push, pull_request] # TODO: make this only pushes on master and pull requests
+on:
+  push:
+    branches: [master, draft]
+  pull_request:
 
 jobs:
 
-  test:
+  accessibility:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +27,3 @@ jobs:
     
     - name: Test Accessibility
       run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml
-      
-
