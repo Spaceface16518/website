@@ -2,7 +2,7 @@ languageCode = "en-us"
 title = "Amrit Rathie"
 theme = "hello-friend-ng"
 copyright = "Amrit Rathie"
-paginate = 1
+paginate = 8
 canonifyURLs = true
 enableRobotsTXT = true
 enableGitInfo = false
@@ -69,5 +69,6 @@ name = "Blog"
 url = "/posts"
 
 [taxonomies]
-tag = "tags"
-category = ""
+category = "blog"
+tag      = "tags"
+series   = "series"
