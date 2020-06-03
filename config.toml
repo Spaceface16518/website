@@ -19,8 +19,8 @@ defaultTheme = "dark"
 [author]
 name = "Amrit Rathie"
 
-#[permalinks]
-#posts = "/posts/:year/:month/:day/:title/"
+[permalinks]
+posts = "/posts/:year/:month/:day/:title/"
 
 [params]
 dateform = "Jan 2, 2006"
