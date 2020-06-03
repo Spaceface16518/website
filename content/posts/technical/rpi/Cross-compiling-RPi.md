@@ -70,7 +70,7 @@ rustup target list | grep "armv7-"
 
 The summary of the output is that we need to choose between `-gnu...` and `-musl...` targets. What does this mean exactly? Well, when we compile a Rust program, Rust tries to **statically link** our program. `gnu` or `musl` tell use which `libc`, or C standard library, Rust is going to try to link with—`glibc` or `musl`, respectively. If we were to use `gnu`, we would need access to the GNU libraries on the RPi. There is a way to do this (I used `rsync` to get a copy of my RPi's sysroot), but I was never able to get it to work. It might be easier on linux, since our computer could better understand the RPi's library files, but this is a significant challenge from MacOS.
 
-Instead, we are going to use `musl`, because it will [let us have fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html, which means we won't need the files from the RPi. Let's download the `musl` target using `rustup`.
+Instead, we are going to use `musl`, because it will [let us have fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html), which means we won't need the files from the RPi. Let's download the `musl` target using `rustup`.
 
 ```shell
 rustup target add armv7-unknown-linux-musleabihf
