@@ -69,5 +69,6 @@ name = "Blog"
 url = "/posts"
 
 [taxonomies]
-tag = "tags"
-category = ""
+category = "blog"
+tag      = "tags"
+series   = "series"
