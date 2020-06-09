@@ -28,6 +28,7 @@ jobs:
     - name: Test Accessibility
       run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml --sitemap-find "^/" --sitemap-replace "${{ steps.get_deployment_url.outputs.deployment }}/"
 
+
   proofer:
     name: HTML Proofer
     runs-on: ubuntu-latest
