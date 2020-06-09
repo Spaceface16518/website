@@ -41,6 +41,10 @@ url = "https://github.com/Spaceface16518/"
 name = "email"
 url = "mailto:amrit.rathie@gmail.com"
 
+[[params.social]]
+name = "mastodon"
+url = "https://fosstodon.org/@Spaceface16518"
+
 [languages]
 
 [languages.en]
