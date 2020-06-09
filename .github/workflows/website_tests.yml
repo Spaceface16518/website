@@ -26,7 +26,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Test Accessibility
-      run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml
+      run: pa11y-ci --sitemap ${{ steps.get_deployment_url.outputs.deployment }}/sitemap.xml --sitemap-find "^/" --sitemap-replace "${{ steps.get_deployment_url.outputs.deployment }}/"
 
   proofer:
     name: HTML Proofer
