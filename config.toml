@@ -73,6 +73,6 @@ name = "Blog"
 url = "/posts"
 
 [taxonomies]
-category = "blog"
+category = "categories"
 tag      = "tags"
 series   = "series"
