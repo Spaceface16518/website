@@ -5,6 +5,18 @@ author: Amrit Rathie
 date: 2020-03-06
 draft: false
 toc: true
+categories:
+  - Development
+  - Tutorial
+tags:
+  - development
+  - embedded development
+  - cross-compiling
+  - MacOS
+  - Raspberry Pi
+  - tutorial
+  - walk-through
+  - rust
 ---
 
 Chances are you're here after searching through a couple different articles with similar names. There are a dozen guides for cross-compiling for the Raspberry Pi, and even a couple that are specific to MacOS. When I started my cross-compiling journey, I went article after article, following all the steps that each one outlined. Sometimes they didn't work, sometimes they "half-worked", and, eventually, one process succeeded. However, the process that worked for me was a chimera of different tutorials and how-to's. Hopefully, reading this one will help you. But if not, keep looking! It'll work eventually.
