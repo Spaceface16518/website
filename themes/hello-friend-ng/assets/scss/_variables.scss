@@ -14,6 +14,36 @@ $dark-color: #a9a9b3;
 $dark-color-secondary: #73747b;
 $dark-border-color: #4a4b50;
 
+/* default theme variables */
+:root {
+  --background: #fff;
+  --background-secondary: #eaeaea;
+  --color: #222;
+  --color-secondary: #999;
+  --border-color: #dcdcdc;
+}
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  :root {
+    --background: #fff;
+    --background-secondary: #eaeaea;
+    --color: #222;
+    --color-secondary: #999;
+    --border-color: #dcdcdc;
+  }
+}
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #292a2d;
+    --background-secondary: #3b3d42;
+    --color: #a9a9b3;
+    --color-secondary: #73747b;
+    --border-color: #4a4b50;
+  }
+}
+
 $media-size-phone: "(max-width: 684px)";
 $media-size-tablet: "(max-width: 900px)";
 
