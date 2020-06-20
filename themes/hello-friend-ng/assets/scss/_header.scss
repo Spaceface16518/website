@@ -1,17 +1,19 @@
 .header {
-  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
 
+
   @media(prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
-    background: #fafafa;
+    --contrasted-background: #fafafa;
   }
   @media(prefers-color-scheme: dark) {
-    background: #252627;
+    --contrasted-background: #252627;
   }
+
+  background: var(--contrasted-background, #fafafa);
 
   &__right {
     display: flex;
