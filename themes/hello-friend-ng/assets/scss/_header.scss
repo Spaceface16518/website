@@ -6,7 +6,10 @@
   position: relative;
   padding: 20px;
 
-  .dark-theme & {
+  @media(prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+    background: #fafafa;
+  }
+  @media(prefers-color-scheme: dark) {
     background: #252627;
   }
 
