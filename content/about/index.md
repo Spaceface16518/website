@@ -6,6 +6,7 @@ author:
 ---
 
 My name is **Amrit Rathie**. I'm a student at **Grapevine High School** (class of 2021) in Grapevine, Texas, studying computer science and exploring the wonders and intricacies of programming languages.
+I love FOSS and Rust, as well as music, cats, and biking.
 
 I'm a aspiring **PL researcher**, and I'm planning to major in Computer Science in college.
 
