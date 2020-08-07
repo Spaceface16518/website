@@ -2,7 +2,7 @@
 title: Either in Rust
 description: On the power of the Either type in Rust
 date: 2020-07-26T21:18:10-05:00
-draft: true
+draft: false
 toc: false
 images:
 categories:
@@ -56,12 +56,34 @@ impl<L: Write, R: Write> Write for Either<L, R> {
     }
   }
   
-  // `flush` implementation elided
+  // `flush` implementation would be the same,
+  // but with `.flush()` instead of `.write(buf)`
 }
 ```
 
-This logic can be extended to other traits as well, such as `Read`, `Display`, `Iterator`, `PartialEq`, `Clone`, and any other trait that can apply if both inner types implement the traits as well. It can also apply to traits with type parameters like `AsMut<str>` or `AsRef<Path>` and traits with associated types like `Deref` where both `R` and `L` dereference to the same `Target`.
+This logic can be extended to other traits as well, such as `Read`, `Display`, `PartialEq`, `Clone`, and any other trait that can apply if both inner types implement the traits as well. It can also apply to traits with type parameters like `AsMut<str>` or `AsRef<Path>` and traits with associated types like `Deref` where both `R` and `L` dereference to the same `Target`.
 
 ## Limitations
 
-Since we generalized an example with concrete types into one variable types constrained by traits, can we generalize the example with variable types into one with variable **traits**? Unfortunately, not with Rust.
+Since we generalized an example with concrete types into one variable types constrained by traits, can we generalize the example with variable types into one with variable **traits** constrained by their behavior? Unfortunately, not with Rust.
+
+First let's think about how this would look in Rust.
+
+```rust
+// AnyTrait is a (made-up) "trait variable"
+impl<L: AnyTrait, R: AnyTrait> AnyTrait for Either<L, R> {}
+```
+
+Now how would we tell Rust how to delegate method calls? Specifying a type parameter allows us to put any type in its place, but how could we use any trait in place of a "trait variable"—there's no way we implement every method of every single trait.
+
+Besides, not every trait acts the same way. We could implement simple traits like `Read`  and `Write`, but what about traits like `Iterator`? It would have to be implemented differently because the `Type` of the iterator would depend on which type is inside the `Either`.
+
+```rust
+impl<L: Iterator, R: Iterator> Iterator for Either<L, R> {
+  type Item = Either<L::Item, R::Item>;
+  
+  // ...
+}
+```
+
+This implementation wouldn't be transparent—we could no longer treat `Either` as a see-through container because it would change the type of the iterator.
