@@ -1,10 +1,46 @@
 {
-    "routes": [
-        {
-            "src": ".*",
-            "headers": {
-                "cache-control": "public,max-age=302400,stale-while-revalidate"
-            }
+  "routes": [
+    {
+      "src": "/",
+      "headers": {
+        "cache-control": "public,max-age=604800,immutable,stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/posts/?",
+      "headers": {
+        "cache-control": "public,max-age=86400,must-revalidate"
+      }
+    },
+    {
+      "src": "/tags/.*",
+      "headers": {
+        "cache-control": "public,max-age=86400,must-revalidate"
+      }
+    },
+    {
+      "src": "/categories/.*",
+      "headers": {
+        "cache-control": "public,max-age=86400,must-revalidate"
+      }
+    },
+    {
+      "src": "/series/.*",
+      "headers": {
+        "cache-control": "public,max-age=86400,must-revalidate"
+      }
+    },
+    {
+      "src": "/posts/.*",
+      "headers": {
+        "cache-control": "public,max-age=302400,stale-while-revalidate"
+      }
+    },
+    {
+        "src": "/about/?",
+        "headers": {
+            "cache-control": "public,max-age=302400,immutable,stale-while-revalidate"
         }
-    ]
+    }
+  ]
 }
