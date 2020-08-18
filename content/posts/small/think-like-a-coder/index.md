@@ -4,7 +4,7 @@ date: 2020-08-18T09:51:35-05:00
 draft: false
 toc: false
 images:
-  - ethic.webp
+  - ethic.jpg
 categories:
   - Tidbits
   - Coding
@@ -18,7 +18,7 @@ tags:
 
 Nah, this isn't a big post about "how to think like a coder" or anything, I just wanted to talk about Ted-Ed's [Think Like a Coder](https://www.youtube.com/playlist?list=PLJicmE8fK0EgogMqDYMgcADT1j5b911or) series.
 
-{{< figure src="ethic.webp" alt="an 3D animated girl with dark skin, green eyes, brown hair, and medium hoop earrings in a green sweater and beanie, followed on the right by the words THINK LIKE A CODER and the TED-Ed logo in the top right corner" attr="Kozmonot Animation Studio via TedEd" link="https://blog.ed.ted.com/2019/09/30/learn-to-think-like-a-coder-with-our-new-series/" rel="external" target="_blank">}}
+{{< figure src="ethic.jpg" alt="an 3D animated girl with dark skin, green eyes, brown hair, and medium hoop earrings in a green sweater and beanie, followed on the right by the words THINK LIKE A CODER and the TED-Ed logo in the top right corner" attr="Kozmonot Animation Studio via TedEd" link="https://blog.ed.ted.com/2019/09/30/learn-to-think-like-a-coder-with-our-new-series/" rel="external" target="_blank">}}
 
 I'm a high schooler who has been coding for about three and a half years. Along the way, my little sister has watched me become more and more passionate (obsessed?) about computer science. I was never a computer guy. I always thought my career would be in biochemistry. I set myself up for that career too, touring [a big chemical company](https://www.dow.com/en-us.html) and performing backyard science experiments.
 
