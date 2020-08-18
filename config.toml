@@ -45,6 +45,22 @@ url = "mailto:amrit.rathie@gmail.com"
 name = "mastodon"
 url = "https://fosstodon.org/@Spaceface16518"
 
+[[params.social]]
+name = "reddit"
+url = "https://www.reddit.com/u/Spaceface16518"
+
+[[params.social]]
+name = "youtube"
+url = "https://www.youtube.com/channel/UCPmQ-BBoMj4esXiRX6xPvzA"
+
+[[params.social]]
+name = "docker"
+url = "https://hub.docker.com/u/spaceface16518"
+
+[[params.social]]
+name = "discord"
+url = "https://discord.com/users/1139"
+
 [languages]
 
 [languages.en]
