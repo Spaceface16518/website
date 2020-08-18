@@ -57,3 +57,32 @@ jobs:
       - name: Run HTML Proofer
         # adapted from https://github.com/cibuilds/hugo#using-on-circleci
         run: htmlproofer ./public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+  lighthouse:
+    runs-on: ubuntu-latest
+    name: Lighthouse
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get Deployment URL
+        id: get_deployment_url
+        uses: dorshinar/get-deployment-url@v1.0.5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2.4.11
+        with:
+          extended: true
+
+      - name: Build Site
+        run: hugo --buildDrafts --baseURL=${{ steps.get_deployment_url.outputs.deployment }}
+      
+      - name: Install Lighthouse
+        run: npm install --global @lhci/cli@0.3.x
+#       - name: Check Lighthouse configuration
+#         run: lhci healthcheck --fatal # TODO: add --checks=githubToken
+      - name: run Lighthouse CI
+        run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=public --collect.url=https://amritrathie.now.sh
