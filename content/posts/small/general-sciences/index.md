@@ -1,7 +1,7 @@
 ---
 title: Why You Should Take General Sciences in Grade School
 date: 2020-08-17
-draft: true
+draft: false
 toc: false
 categories:
     - Tidbits
