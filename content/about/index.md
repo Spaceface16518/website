@@ -10,7 +10,7 @@ I love FOSS and Rust, as well as music, cats, and biking.
 
 I'm an aspiring **PL researcher**, and I'm planning to major in Computer Science in college.
 
-I know **Rust**, **Haskell**, **Go**, **JavaScript** (**Vue**, Angular, Ionic), HTML/CSS, Python, Java, C++, C#, C, Ruby, and Perl (in order of experience).
+I know **Rust**, **Haskell**, **Go**, **JavaScript** (**Vue**, Angular, Ionic), Python, HTML/CSS, Java, C++, C#, C, Ruby, and Perl (in order of experience).
 
 I have experience with **programming language design and development**, web development (mostly backend), embedded/IoT programming, game development, and general systems programming.
 
