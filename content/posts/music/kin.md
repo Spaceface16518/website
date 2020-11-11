@@ -1,7 +1,7 @@
 ---
 title: "Music Monday: Kin by Awaken I Am"
 date: 2020-11-09T12:47:53-06:00
-draft: true
+draft: false
 toc: false
 images:
 series:
