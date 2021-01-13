@@ -1,0 +1,27 @@
+.site-title {
+  border-top: solid $dark-border-color;
+  border-bottom: solid $dark-border-color;
+
+  .dark-theme & {
+    border-top: solid $light-border-color;
+    border-bottom: solid $light-border-color;
+  }
+
+  @keyframes reveal {
+    from {
+      height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+
+  overflow: hidden;
+  animation: reveal 1s ease-out;
+  white-space: nowrap;
+  padding: 48px 32px;
+  text-align: center;
+}
+
