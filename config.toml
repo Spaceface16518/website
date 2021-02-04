@@ -57,6 +57,10 @@ name = "docker"
 url = "https://hub.docker.com/u/spaceface16518"
 
 [[params.social]]
+name = "matrix"
+url = "https://matrix.to/#/@spaceface16518:matrix.org"
+
+[[params.social]]
 name = "discord"
 url = "https://discord.com/users/1139"
 
