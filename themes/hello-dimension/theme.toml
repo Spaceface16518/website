@@ -1,0 +1,10 @@
+name = "hello-dimension"
+license = "MIT"
+min_version = 0.30
+
+[author]
+name = "Amrit Rathie"
+
+[original]
+name = "hello-friend-ng"
+homepage = "https://atlialp.com"
