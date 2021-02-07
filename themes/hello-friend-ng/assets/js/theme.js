@@ -1,6 +1,6 @@
 // Toggle theme
 
-const theme = window.localStorage && window.localStorage.getItem("theme");
+const theme = window.localStorage && window.localStorage.getItem("theme") || window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : null || null;
 const themeToggle = document.querySelector(".theme-toggle");
 const isDark = theme === "dark";
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
@@ -23,3 +23,4 @@ themeToggle.addEventListener("click", () => {
     ? metaThemeColor.setAttribute("content", "#252627")
     : metaThemeColor.setAttribute("content", "#fafafa");
 });
+
