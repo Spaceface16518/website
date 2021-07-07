@@ -1,14 +1,19 @@
 .header {
-  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
 
-  .dark-theme & {
-    background: #252627;
+
+  @media(prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+    --contrasted-background: #fafafa;
   }
+  @media(prefers-color-scheme: dark) {
+    --contrasted-background: #252627;
+  }
+
+  background: var(--contrasted-background, #fafafa);
 
   &__right {
     display: flex;
@@ -28,18 +33,6 @@
     width: 760px;
     max-width: 100%;
   }
-}
-
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.theme-toggler {
-  fill: currentColor;
 }
 
 .unselectable {

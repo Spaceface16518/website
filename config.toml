@@ -13,7 +13,6 @@ disable404 = false
 disableHugoGeneratorInject = true
 comments = true
 homeSubtitle = "Software Developer"
-defaultTheme = "dark"
 
 [author]
 name = "Amrit Rathie"
