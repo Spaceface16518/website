@@ -1,0 +1,23 @@
+- name: "GitHub"
+  url: "https://github.com/Spaceface16518/"
+
+- name: "Email"
+  url: "mailto:amrit.rathie@gmail.com"
+
+- name: "Mastodon"
+  url: "https://fosstodon.org/@Spaceface16518"
+
+- name: "Reddit"
+  url: "https://www.reddit.com/u/Spaceface16518"
+
+- name: "Youtube"
+  url: "https://www.youtube.com/channel/UCPmQ-BBoMj4esXiRX6xPvzA"
+
+- name: "Docker"
+  url: "https://hub.docker.com/u/spaceface16518"
+
+- name: "Discord"
+  url: "https://discord.com/users/1139"
+
+- name: "Matrix"
+  url: "https://matrix.to/#/@spaceface16518:matrix.org"
