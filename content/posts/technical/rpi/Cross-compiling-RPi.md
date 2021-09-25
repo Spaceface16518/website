@@ -1,6 +1,8 @@
 ---
 title: Cross-compiling Rust from MacOS to Raspberry Pi
-description: My experience writing Rust for the Raspberry Pi on MacOS
+description: |
+  When I got a Raspberry Pi 4 Model B for my birthday this year,
+  I wanted to program it in the language I am most familiar with: Rust.
 author: Amrit Rathie
 date: 2020-03-06
 draft: false

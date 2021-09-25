@@ -4,8 +4,10 @@ date: 2020-11-09T12:47:53-06:00
 draft: false
 toc: false
 images:
-series:
-  - Music Monday
+series: Music Monday
+description: |
+  The first post in my (hopeful) Music Monday series.
+  Kin is a song about the tragic death of a band member. The band later learned that the death was purposeful and preventable. In anger, they wrote the album that includes Kin.
 tags:
   - Music
   - Kin
@@ -15,10 +17,8 @@ tags:
   - Post Hardcore
 ---
 
-{{< youtube TfLI0TCvrJU >}}
-
 > On the 15th of May 2018, we received a call which would change our lives forever.
-
+ 
 After a successful tour, the band *Awaken I Am* was struck by a terrible
 tragedy: their guitarist, Connor, was hit by a car and had died at the scene.
 The crash was not an "accident"; the driver of the oncoming car had been

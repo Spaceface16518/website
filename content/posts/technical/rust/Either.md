@@ -1,6 +1,9 @@
 ---
 title: Either in Rust
-description: On the power of the Either type in Rust
+description: |
+  Everyone knows about Option and Result, but the lesser-known Either is also a useful and powerful enumeration.
+  Let's explore what you can do with it and why it works the way it does.
+
 date: 2020-07-26T21:18:10-05:00
 draft: false
 toc: false

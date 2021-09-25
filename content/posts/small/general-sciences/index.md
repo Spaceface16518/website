@@ -1,5 +1,6 @@
 ---
 title: Why You Should Take General Sciences in Grade School
+description: "After an argument about the necessity of general sciences (i.e. Physics, Chemistry, and Biology), I reflected on why I think taking these classes is beneficial."
 date: 2020-08-17
 draft: false
 toc: false

@@ -2,6 +2,11 @@
 title: Think Like a Coder
 date: 2020-08-18T09:51:35-05:00
 draft: false
+description: |
+  Think Like a Coder is my favorite educational series for teaching kids how to code.
+  Here's my story with it, and how I got my sister to like solving coding problems, despite
+  her aversion to coding.
+
 toc: false
 images:
   - ethic.jpg
