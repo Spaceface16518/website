@@ -1,6 +1,5 @@
 /* eslint-disable quote-props */
 module.exports = {
-  jit: true,
   purge: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
