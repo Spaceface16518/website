@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        // 'post': 'minmax(60px, 136px) minmax(max-content, auto) min-content'
+        // 'post': 'minmax(64px, max-content) minmax(max-content, auto) min-content'
         'post': '1fr minmax(max-content, auto) min-content'
       }
     }

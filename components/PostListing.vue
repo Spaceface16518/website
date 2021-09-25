@@ -15,6 +15,9 @@
       :document="{ body: post.excerpt }"
       class="px-1 overflow-hidden overflow-ellipsis"
     />
+    <p v-else class="px-1 overflow-hidden overflow-ellipsis">
+      {{ post.description }}
+    </p>
     <div class="p-3 text-gray-700 mt-auto justify-self-end">
       {{ $moment(post.createdAt).format('MMMM D, YYYY') }}
     </div>
