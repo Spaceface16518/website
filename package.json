@@ -14,13 +14,13 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@tailwindcss/typography": "^0.4.1",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "octokit": "^1.1.0",
     "pluralize": "^8.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "simpledotcss": "^1.0.1",
     "title-case": "^3.0.3"
   },
   "devDependencies": {

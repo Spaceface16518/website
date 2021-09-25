@@ -17,10 +17,6 @@ export default {
     ]
   },
 
-  css: [
-    'simpledotcss'
-  ],
-
   plugins: [
     '~/plugins/title-case.ts'
   ],

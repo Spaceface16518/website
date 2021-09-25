@@ -1,15 +1,11 @@
 <template lang="pug">
-  main
-    h1 {{ $titleCase($route.params.taxonomy) }}: {{ $titleCase($route.params.taxon) }}
-    ul
-      li(v-for='post in posts')
-        nuxt-link(:to='`/blog/${post.slug}`').flex.flex-row.justify-between.items-center.border-b.border-dashed.py-3.px-1
-          span {{ post.title }}
-          span {{ $moment(post.createdAt).format('MMM D, YYYY') }}
+  main.mx-auto.max-w-screen-xl
+    directory(:title="`${ $titleCase($route.params.taxonomy) } : ${ $titleCase($route.params.taxon) }`" :posts="posts")
 </template>
 
 <script>
 import pluralize from 'pluralize'
+
 export default {
   async asyncData ({
     $content,

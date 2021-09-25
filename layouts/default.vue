@@ -1,12 +1,12 @@
 <template lang="pug">
-  div
+  div.min-h-screen.flex.flex-col.flex-grow-0.justify-between.items-stretch
     site-header
-    nuxt
-    site-footer
+    nuxt.container
+    site-footer.w-full.mx-auto.mt-3
 </template>
 
-<style scoped>
-footer h2 {
-  @apply text-lg;
+<style>
+body {
+  @apply bg-purple-50;
 }
 </style>
