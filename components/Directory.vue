@@ -5,14 +5,14 @@
         {{ title }}
       </h1>
     </header>
-    <div>
+    <div class="px-2">
       <div v-for="{year, group} in groups" :key="year" class="grid gap-2 grid-split-side-header auto-rows-auto mb-4">
         <div class="border-r-2 border-t-2 border-dashed py-2 px-3">
           <h2 class="text-4xl text-right font-bold">
             {{ year }}
           </h2>
         </div>
-        <ul class="w-full py-2 grid grid-flow-row gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <ul class="w-full py-2 grid grid-flow-row auto-rows-min gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li v-for="post in group" :key="post.updatedAt">
             <post-listing :post="post" />
           </li>
@@ -59,7 +59,7 @@ export default Vue.extend({
         .reverse()
         .map((year: string) => ({
           year,
-          group: years[year as any].sort().reverse() // ew why
+          group: years[year as any].sort() // ew
         }))
     }
   }
@@ -69,9 +69,5 @@ export default Vue.extend({
 <style scoped>
 .grid-split-side-header {
   grid-template-columns: 1fr 5fr;
-}
-
-ul {
-  grid-template-rows: min-content;
 }
 </style>
