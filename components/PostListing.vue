@@ -4,7 +4,7 @@
     class="h-full grid grid-cols-1 grid-rows-post gap-1 rounded-xl shadow transition hover:shadow-xl"
   >
     <header
-      :class="`w-full bg-gradient-to-tr from-${gradient.fromColor}-400 to-${gradient.toColor}-400 rounded-t-xl pb-3`"
+      :class="`w-full from-${gradient.fromColor}-400 to-${gradient.toColor}-400 bg-gradient-to-tr rounded-t-xl pb-3`"
     >
       <h3 class="px-4 pt-4 pb-1 text-3xl">
         {{ post.title }}
