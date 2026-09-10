@@ -6,7 +6,7 @@ const groups = ['All', 'Hardware', 'AI', 'Research'];
 <Base title="Amrit Rathie — Software engineer" description={profile.intro}>
 <div class="lab">
   <header>
-    <a class="logo" href="/" aria-label="Amrit Rathie home">AR<span aria-hidden="true">↗</span></a>
+    <a class="logo" href="/" aria-label="Amrit Rathie home">AR<span aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter" /></svg></span></a>
     <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="main">
@@ -49,7 +49,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-filter]').forEach(button => 
 body{background:var(--paper);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}
 .lab{max-width:1200px;padding:0 5%;margin:auto}
 header{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid var(--line)}
-.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-size:24px;font-weight:700;letter-spacing:-1px}.logo span{display:grid;place-items:center;width:23px;height:23px;background:var(--blue);color:white;font-size:20px;font-weight:400}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-size:24px;font-weight:700;letter-spacing:-1px}.logo svg{display:block;flex:none}.logo span{flex:none;display:grid;place-items:center;width:23px;height:23px;background:var(--blue);color:white;font-size:20px;font-weight:400}
 nav{display:flex;gap:28px;font-size:13px}nav a,footer a{text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:4px}
 .intro{display:grid;grid-template-columns:1.6fr 1fr;gap:70px;padding:72px 0 65px;align-items:center}
 .label{font:10px monospace;letter-spacing:1.3px;color:var(--muted)}
