@@ -1,12 +1,18 @@
 export const profile = {
- name: 'Amrit Rathie', title: 'Software developer & curious builder', location: 'Grapevine, Texas',
+ name: 'Amrit Rathie', title: 'Software engineer & founder', location: 'Grapevine, Texas',
  email: 'amrit.rathie@gmail.com', github: 'https://github.com/Spaceface16518', linkedin: 'https://www.linkedin.com/in/amrit-rathie',
- intro: 'I build software that connects thoughtful ideas to the real world — from developer tools and desktop apps to wearable sensing and creative computing.',
- about: 'My interests sit at the intersection of systems, programming languages, and useful products. I like understanding how things work, then making them easier for someone else to use. My projects span Rust, TypeScript, Python, cloud infrastructure, and embedded hardware.',
+ intro: 'I’m a full-stack software engineer at Fidelity Investments and the founder & CTO of POWERPERCEPT. I build across software, hardware, and AI — turning complex systems into things people can use.',
+ about: 'Based in Grapevine, Texas, I work across financial technology, wearable hardware, and applied AI. I earned my B.S. in Computer Science at UT Dallas in May 2024. My work ranges from distributed services and developer tooling to custom electronics and mobile experiences. I like understanding a system all the way down — and making it useful all the way up.',
+ education: 'B.S. Computer Science · UT Dallas · May 2024',
+ community: 'Five-time collegiate hackathon winner, hackathon judge and mentor, and former Nebula Labs treasurer. I enjoy helping other builders turn a first idea into something real.',
  personal: 'Away from code, I make room for music, biking, and cats. Curiosity is the thread that connects it all.',
 };
 export const projects = [
- { id: 'powerpercept', name: 'PowerPercept', category: 'Hardware × software', description: 'Exploring wearable pressure sensing: a platform for collecting foot-pressure data across movement and strength training.', detail: 'A prototype effort spanning passive sensors, custom circuit boards, Bluetooth connectivity, and a flexible pressure-data platform.', tags: ['Wearables', 'Embedded', 'KiCad'], stage: 'Prototype', href: null },
+ { id: 'powerpercept', name: 'PowerPercept', category: 'Hardware × software', description: 'A smart-insole platform connecting wearable pressure sensing with real-time movement analytics.', detail: 'As founder & CTO, I work across custom circuit boards, BLE firmware, Swift and React Native apps, and in-house manufacturing. Supported by more than $40K in grants and accelerator investment.', tags: ['Wearables', 'Embedded', 'KiCad'], stage: 'Founder & CTO · 2025–present', href: null },
+ { id: 'cloudcare', name: 'CloudCare', category: 'Applied AI', description: 'An in-flight infotainment experience with an AI travel assistant, lost-item detection, and gesture interaction.', detail: 'Won first place in the American Airlines Challenge at TAMUHack 2024. Built with GPT-4 Vision, MediaPipe, and WebSockets.', tags: ['AI', 'Computer vision', 'WebSockets'], stage: 'Hackathon winner · 2024', href: 'https://github.com/Spaceface16518/CloudCare' },
+ { id: 'locking', name: 'Scalable locking algorithms', category: 'Systems research', description: 'Exploring synchronization on large multicore systems, including persistent-memory locking.', detail: 'Implemented a new algorithm alongside five established approaches and built a benchmark suite for the TACC cluster using Linux interposition and SLURM.', tags: ['C', 'OpenMP', 'SLURM'], stage: 'Research · Fall 2023', href: 'https://github.com/Spaceface16518/locking' },
+
+
  { id: 'headershim', name: 'HeaderShim', category: 'Developer tools', description: 'A browser extension for managing HTTP header rules with profiles and per-tab control.', detail: 'Bringing a clear interface to browser request rules, with a TypeScript core and a lightweight extension UI.', tags: ['TypeScript', 'Browser APIs', 'Preact'], stage: 'Independent project', href: null },
  { id: 'dsupload', name: 'DSUpload', category: 'Desktop software', description: 'A Rust desktop tool for organizing photo and video imports with review and recovery built into the workflow.', detail: 'Working on careful media reconciliation, metadata matching, and a graphical interface for large libraries.', tags: ['Rust', 'egui', 'Media'], stage: 'Independent project', href: null },
  { id: 'creative', name: 'Creative AI workflows', category: 'Creative computing', description: 'Experimenting with personalized cake-topper imagery and repeatable image-generation workflows.', detail: 'Connecting ComfyUI workflows with AWS GPU infrastructure, with attention to reproducibility and resource lifecycle.', tags: ['Python', 'ComfyUI', 'AWS'], stage: 'Exploration', href: null },
@@ -14,6 +20,10 @@ export const projects = [
  { id: 'swarm', name: 'Swarm robotics', category: 'Research', description: 'Comparing decentralized robot cooperation through simulation and behavioral analysis.', detail: 'Simulated resource aggregation algorithms in C++ and Unreal Engine, analyzed results with Python, and presented at the ACM Research Symposium.', tags: ['C++', 'Simulation', 'Python'], stage: 'Fall 2021', href: 'https://github.com/Spaceface16518/resume' },
 ];
 export const history = [
+ { date: 'Feb 2025–present', title: 'POWERPERCEPT · Founder & CTO', text: 'Building a smart-insole platform across custom electronics, firmware, mobile apps, and in-house manufacturing. Secured $40K+ in grants and accelerator investment.', kind: 'Founder' },
+ { date: 'Jun 2024–present', title: 'Fidelity Investments · Full-Stack Software Engineer', text: 'Building AI-assisted API migration tooling, shared configuration and storage systems, and observability for financial data pipelines.', kind: 'Engineering' },
+ { date: 'May 2024', title: 'UT Dallas · B.S. Computer Science', text: 'Academic Excellence Scholarship, Dean’s List, and five collegiate hackathon wins.', kind: 'Education' },
+ { date: 'Mar–Dec 2023', title: 'EXPANSIA · Full-stack Developer Intern', text: 'Improved aircraft-parts data pipelines, automated manufacturing feasibility analysis, and fine-tuned BART for report summarization.', kind: 'Engineering' },
  { date: 'Recent work', title: 'Independent projects', text: 'Developer tools, desktop media workflows, wearable sensing, and creative AI infrastructure.', kind: 'Building' },
  { date: '2023–2024', title: 'Nebula Labs · Treasurer', text: 'Part of the student-led organization building software for the UT Dallas community.', kind: 'Community' },
  { date: 'Fall 2022', title: 'Degree Planner · UT Dallas', text: 'Next.js UI and API development, degree-plan validation, and frontend training for new contributors.', kind: 'Software' },
