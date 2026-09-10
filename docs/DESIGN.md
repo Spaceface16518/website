@@ -1,3 +1,5 @@
-# The working lab
+# Working lab
 
-Purpose: present interdisciplinary practice to technical collaborators. A blue engineering-notebook system, conceptual process schematic, and filterable project index foreground experimentation across hardware, software, and research. Diagrams are decorative concepts, not measured sensor data. Filtering uses real accessible buttons with pressed state and live count; every project remains available without JavaScript. Native disclosures expose implementation context.
+A restrained blue-and-paper portfolio, revised after owner feedback. Plain headings, a compact introduction, and text-led project cards replace slogans, conceptual diagrams, decorative glyphs, and the generic philosophy section. The project list uses only projects from the supplied resumes; GitHub ownership is not inferred from forks. Education and work are ordered by start date, beginning with UT Dallas (2021–2024).
+
+Native disclosures and discipline filters retain useful interaction; all projects remain readable without JavaScript.
