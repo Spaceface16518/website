@@ -1,0 +1,10 @@
+---
+import { profile } from '../data/profile';
+interface Props { title?: string; description?: string; }
+const { title = 'Amrit Rathie — Software & thoughtful experiments', description = profile.intro } = Astro.props;
+---
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#233e35"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><title>{title}</title></head><body><a class="skip-link" href="#main">Skip to content</a><slot /></body></html>
+<style is:global>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{color:inherit}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}svg{max-width:100%}img{max-width:100%;height:auto}h1,h2,h3,p{margin-top:0}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b14c26;outline-offset:5px}.skip-link{position:fixed;top:8px;left:8px;z-index:99;padding:12px 20px;background:white;color:black;transform:translateY(-150%)}.skip-link:focus{transform:translateY(0)}section[id]{scroll-margin-top:32px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
